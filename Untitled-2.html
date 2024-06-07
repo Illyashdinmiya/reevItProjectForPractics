@@ -1,0 +1,91 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+		
+		window.addEventListener('scroll', function() {
+	       
+			if (window.scrollY > 200) {
+				document.getElementById('navbar_top').classList.add('fixed-top');
+				// add padding top to show content behind navbar
+				navbar_height = document.querySelector('.navbar').offsetHeight;
+				document.body.style.paddingTop = navbar_height + 'px';
+			} else {
+			 	document.getElementById('navbar_top').classList.remove('fixed-top');
+				 // remove padding top from body
+				document.body.style.paddingTop = '0';
+			} 
+		});
+	}); 
+	// DOMContentLoaded  end
+</script>
+
+<style type="text/css">
+	.fixed-top {
+	    top: -40px;
+	    transform: translateY(40px);
+	    transition: transform .3s;
+	}
+
+    .second img{
+    height: 30px;
+    justify-content: space-between;
+    margin-top: 13px;
+
+}
+
+
+.lol {
+    display: flex;
+    gap: 100px;
+}
+
+</style>
+</head>
+<body>
+<div class="main">
+<div class="bg-warning py-3">
+	<div class="container" style="display: flex; justify-content: space-between;   border: 1px solid rgba(255, 255, 255, 0.232); ">
+		
+            <div class="lol">
+              <p>+977 9806594764 | +977 9826602717</p>
+              <p>mail@reev-it.com</p>
+            </div>
+            <div class="second">
+              <img src="icons8-facebook-50.png" alt="Facebook" />
+              <img src="icons8-twitter-50.png" alt="Twitter" />
+              <img src="icons8-insta-50.png" alt="Instagram" />
+              <img src="icons8-linked-in-50.png" alt="LinkedIn" />
+              <img src="icons8-youtube-50.png" alt="YouTube" />
+            </div>
+          </div>
+	</div>
+</div>
+
+<!-- ============= COMPONENT ============== -->
+<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-primary">
+ <div class="container">
+ 	 <a class="navbar-brand" href="#"><img src="logo-3.png" style="width: 200px; height: 92;"></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="main_nav">
+	
+
+	<ul class="navbar-nav ms-auto">
+		<li class="nav-item"><a class="nav-link" href="#background">Home</a></li>
+		<li class="nav-item"><a class="nav-link" href="#Services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+		
+		</li>
+	</ul>
+
+  </div> <!-- navbar-collapse.// -->
+ </div> <!-- container-fluid.// -->
+</nav>
+</div>
+<!-- ============= COMPONENT END// ===========>
